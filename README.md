@@ -45,26 +45,26 @@ Let's go through each of these hooks:
 
 These hooks provide a powerful way to customize the behavior of `pytest` at various stages of the testing process. You can use them to inject custom behavior, perform additional logging, or implement advanced parametrization strategies.
 # The coding order
-1 pytest_configure 
-2 pytest_sessionstart 
-3 pytest_collection 
-3.1 pytest_generate_tests(metafunc)
-3.2 pytest_make_parametrize_id(config, val, argname) 
-3.3 pytest_collection_modifyitems(session, config, items) 
-3.4 pytest_deselected(items) 
-4 pytest_runtestloop 
-4.1 pytest_runtest_logstart(nodeid, location) 
-4.2 pytest_runtest_logfinish(nodeid, location) 
-4.3 pytest_runtest_setup(item) 
-4.4 pytest_runtest_call(item)
-4.5 pytest_runtest_teardow(item, nextitem) 
-4.6 pytest_fixture_setup(fixturedef, request) 
-4.7 pytest_fixture_post_finalizer(fixturedef, request) 
-4.8 pytest_runtest_makereport(item, call) 
-4.9 pytest_runtest_logreport(report) 
-4.10 pytest_report_teststatus(report, config) 
-5 pytest_sessionfinish
-6 pytest_unconfigure
+ - 1 pytest_configure 
+ - 2 pytest_sessionstart 
+ - 3 pytest_collection 
+ - 3.1 pytest_generate_tests(metafunc)
+ - 3.2 pytest_make_parametrize_id(config, val, argname) 
+ - 3.3 pytest_collection_modifyitems(session, config, items) 
+ - 3.4 pytest_deselected(items) 
+ - 4 pytest_runtestloop 
+ - 4.1 pytest_runtest_logstart(nodeid, location) 
+ - 4.2 pytest_runtest_logfinish(nodeid, location) 
+ - 4.3 pytest_runtest_setup(item) 
+ - 4.4 pytest_runtest_call(item)
+ - 4.5 pytest_runtest_teardow(item, nextitem) 
+ - 4.6 pytest_fixture_setup(fixturedef, request) 
+ - 4.7 pytest_fixture_post_finalizer(fixturedef, request) 
+ - 4.8 pytest_runtest_makereport(item, call) 
+ - 4.9 pytest_runtest_logreport(report) 
+ - 4.10 pytest_report_teststatus(report, config) 
+ - 5 pytest_sessionfinish
+ - 6 pytest_unconfigure
 # Run it
 $ pip install -e .
 Defaulting to user installation because normal site-packages is not writeable
