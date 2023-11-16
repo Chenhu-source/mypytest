@@ -74,7 +74,7 @@ Installing collected packages: mypkg
   Running setup.py develop for mypkg
 Successfully installed mypkg-0.1
 
-wchenghu@vm:~/PycharmProjects/mypytest$ pytest --order
+$ pytest --order
 1. Running pytest_configure hook
 2. Running pytest_sessionstart hook
 ============================================= test session starts =============================================
@@ -107,5 +107,4 @@ PASSED                                                          [100%]4.9 Runnin
 
 ============================================== 1 passed in 0.13s ==============================================
 6. Running pytest_unconfigure hook
-wchenghu@vm:~/PycharmProjects/mypytest$ 
-# mypytest
+
