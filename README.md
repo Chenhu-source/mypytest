@@ -66,45 +66,45 @@ These hooks provide a powerful way to customize the behavior of `pytest` at vari
  - 5 pytest_sessionfinish
  - 6 pytest_unconfigure
 # Run it
-$ pip install -e .
-Defaulting to user installation because normal site-packages is not writeable
-Obtaining file:///home/wchenghu/PycharmProjects/mypytest
-  Preparing metadata (setup.py) ... done
-Installing collected packages: mypkg
-  Running setup.py develop for mypkg
-Successfully installed mypkg-0.1
+$ pip install -e .  
+Defaulting to user installation because normal site-packages is not writeable  
+Obtaining file:///home/wchenghu/PycharmProjects/mypytest  
+  Preparing metadata (setup.py) ... done  
+Installing collected packages: mypkg  
+  Running setup.py develop for mypkg  
+Successfully installed mypkg-0.1  
 
-$ pytest --order
-1. Running pytest_configure hook
-2. Running pytest_sessionstart hook
-============================================= test session starts =============================================
-platform linux -- Python 3.10.12, pytest-8.0.0.dev319+g442b09ed9.d20231114, pluggy-1.3.0 -- /usr/bin/python3
-cachedir: .pytest_cache
-hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/wchenghu/PycharmProjects/mypytest/.hypothesis/examples')
-rootdir: /home/wchenghu/PycharmProjects/mypytest
-configfile: pytest.ini
-plugins: mock-3.6.1, arraydiff-0.5.0, remotedata-0.3.3, astropy-header-0.2.0, hypothesis-6.36.0, doctestplus-0.11.2, filter-subpackage-0.1.1, cov-3.0.0, openfiles-0.5.0
-collecting ...
-3. Running pytest_collection hook
-3.3 Running pytest_collection_modifyitems hook
-collected 1 item                                                                                              
-4. Running pytest_runtestloop hook
-New-style pytest_runtest_protocol hook
+$ pytest --order  
+1. Running pytest_configure hook  
+2. Running pytest_sessionstart hook  
+============================================= test session starts =============================================  
+platform linux -- Python 3.10.12, pytest-8.0.0.dev319+g442b09ed9.d20231114, pluggy-1.3.0 -- /usr/bin/python3  
+cachedir: .pytest_cache  
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/wchenghu/PycharmProjects/mypytest/.hypothesis/examples')  
+rootdir: /home/wchenghu/PycharmProjects/mypytest  
+configfile: pytest.ini  
+plugins: mock-3.6.1, arraydiff-0.5.0, remotedata-0.3.3, astropy-header-0.2.0, hypothesis-6.36.0, doctestplus-0.11.2, filter-subpackage-0.1.1, cov-3.0.0, openfiles-0.5.0  
+collecting ...  
+3. Running pytest_collection hook  
+3.3 Running pytest_collection_modifyitems hook  
+collected 1 item                                                                                                
+4. Running pytest_runtestloop hook  
+New-style pytest_runtest_protocol hook  
 
-tests/test_calculator.py::test_addition 4.1 Running pytest_runtest_logstart hook
-4.8 Running pytest_runtest_makereport hook
-4.10 Running pytest_report_teststatus hook
-4.9 Running pytest_runtest_logreport hook
-4.8 Running pytest_runtest_makereport hook
-4.10 Running pytest_report_teststatus hook
-PASSED                                                          [100%]4.9 Running pytest_runtest_logreport hook
-4.8 Running pytest_runtest_makereport hook
-4.10 Running pytest_report_teststatus hook
-4.9 Running pytest_runtest_logreport hook
-4.2 Running pytest_runtest_logfinish hook
-5. Running pytest_sessionfinish hook
+tests/test_calculator.py::test_addition 
+4.1 Running pytest_runtest_logstart hook  
+4.8 Running pytest_runtest_makereport hook  
+4.10 Running pytest_report_teststatus hook  
+4.9 Running pytest_runtest_logreport hook  
+4.8 Running pytest_runtest_makereport hook  
+4.10 Running pytest_report_teststatus hook  PASSED                                                          [100%]4.9 Running pytest_runtest_logreport hook  
+4.8 Running pytest_runtest_makereport hook  
+4.10 Running pytest_report_teststatus hook  
+4.9 Running pytest_runtest_logreport hook  
+4.2 Running pytest_runtest_logfinish hook  
+5. Running pytest_sessionfinish hook  
 
 
-============================================== 1 passed in 0.13s ==============================================
-6. Running pytest_unconfigure hook
+============================================== 1 passed in 0.13s ==============================================  
+6. Running pytest_unconfigure hook  
 
