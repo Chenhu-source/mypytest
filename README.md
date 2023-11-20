@@ -91,7 +91,7 @@ collected 1 item
 4. Running pytest_runtestloop hook  
 New-style pytest_runtest_protocol hook  
 
-tests/test_calculator.py::test_addition 
+tests/test_calculator.py::test_addition  
 4.1 Running pytest_runtest_logstart hook  
 4.8 Running pytest_runtest_makereport hook  
 4.10 Running pytest_report_teststatus hook  
