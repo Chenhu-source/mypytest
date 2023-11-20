@@ -97,7 +97,8 @@ tests/test_calculator.py::test_addition
 4.10 Running pytest_report_teststatus hook  
 4.9 Running pytest_runtest_logreport hook  
 4.8 Running pytest_runtest_makereport hook  
-4.10 Running pytest_report_teststatus hook  PASSED                                                          [100%]4.9 Running pytest_runtest_logreport hook  
+4.10 Running pytest_report_teststatus hook  PASSED                                                          [100%]  
+4.9 Running pytest_runtest_logreport hook  
 4.8 Running pytest_runtest_makereport hook  
 4.10 Running pytest_report_teststatus hook  
 4.9 Running pytest_runtest_logreport hook  
